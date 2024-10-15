@@ -1,0 +1,68 @@
+dag {
+"Barrier Employer or coworker attitudes" [pos="0.600,-0.031"]
+"Barrier Lack of education or training" [pos="-1.151,1.061"]
+"Barrier Lack of job counseling" [pos="-0.906,0.976"]
+"Barrier Lack of transportation" [pos="-0.658,0.829"]
+"Barrier Loss of government assistance" [pos="0.456,0.484"]
+"Barrier Need for special features" [pos="0.529,0.221"]
+"Barrier None" [pos="-1.545,1.236"]
+"Barrier Other" [pos="-1.413,1.139"]
+"Barrier Your difficulty with disability" [pos="0.677,-0.310"]
+"Ctr for Indpdt Living for Ind w Dis helpful" [pos="-0.129,-0.547"]
+"Demographics age" [exposure,pos="-0.776,-1.612"]
+"Demographics race of respondent" [exposure,pos="-1.389,-1.248"]
+"Demographics sex" [exposure,pos="-1.104,-1.488"]
+"Does this person have any of these disability conditions" [exposure,pos="-1.176,-2.012"]
+"How helpful One Stop Career Centers" [pos="-0.514,-0.400"]
+"How helpful was Vocational Rehab Agency" [pos="-1.285,-0.117"]
+"Indicates household-total family income in past 12 months" [exposure,pos="-0.219,-2.027"]
+"Labor Force-employment status" [outcome,pos="0.443,1.418"]
+"Other employment assist program helpful" [pos="0.473,-0.756"]
+"The Ticket to Work Program helpfulness" [pos="-0.906,-0.248"]
+"Used Assistive Technology Act Prog" [pos="0.654,-1.535"]
+"Used Ctr for Indept Living for Ind w Dis" [pos="-0.389,-1.020"]
+"Used One Stop Career Centers" [pos="-0.733,-0.911"]
+"Used The Client Assistance Program" [pos="0.333,-1.299"]
+"Used Vocational Rehabilitation Agencies" [pos="-1.350,-0.694"]
+"Used any other employment assistance program" [pos="0.022,-1.178"]
+"Used the Ticket to Work Program" [pos="-1.053,-0.803"]
+county [exposure,pos="-0.437,-1.733"]
+"Barrier Employer or coworker attitudes" -> "Labor Force-employment status"
+"Barrier Lack of education or training" -> "Labor Force-employment status"
+"Barrier Lack of job counseling" -> "Labor Force-employment status"
+"Barrier Lack of transportation" -> "Labor Force-employment status"
+"Barrier Loss of government assistance" -> "Labor Force-employment status"
+"Barrier Need for special features" -> "Labor Force-employment status"
+"Barrier None" -> "Labor Force-employment status"
+"Barrier Other" -> "Labor Force-employment status"
+"Barrier Your difficulty with disability" -> "Labor Force-employment status"
+"Ctr for Indpdt Living for Ind w Dis helpful" -> "Labor Force-employment status"
+"Demographics age" -> "Used Ctr for Indept Living for Ind w Dis"
+"Demographics race of respondent" -> "Used Assistive Technology Act Prog"
+"Demographics race of respondent" -> "Used Ctr for Indept Living for Ind w Dis"
+"Demographics race of respondent" -> "Used One Stop Career Centers"
+"Demographics race of respondent" -> "Used The Client Assistance Program"
+"Demographics race of respondent" -> "Used Vocational Rehabilitation Agencies"
+"Demographics race of respondent" -> "Used any other employment assistance program"
+"Demographics race of respondent" -> "Used the Ticket to Work Program"
+"Does this person have any of these disability conditions" -> "Demographics age"
+"Does this person have any of these disability conditions" -> "Demographics race of respondent"
+"Does this person have any of these disability conditions" -> "Demographics sex"
+"Does this person have any of these disability conditions" -> "Indicates household-total family income in past 12 months"
+"Does this person have any of these disability conditions" -> county
+"How helpful One Stop Career Centers" -> "Labor Force-employment status"
+"How helpful was Vocational Rehab Agency" -> "Labor Force-employment status"
+"Indicates household-total family income in past 12 months" -> "Used Assistive Technology Act Prog"
+"Indicates household-total family income in past 12 months" -> "Used any other employment assistance program"
+"Other employment assist program helpful" -> "Labor Force-employment status"
+"The Ticket to Work Program helpfulness" -> "Labor Force-employment status"
+"Used Assistive Technology Act Prog" -> "Other employment assist program helpful"
+"Used Ctr for Indept Living for Ind w Dis" -> "Ctr for Indpdt Living for Ind w Dis helpful"
+"Used One Stop Career Centers" -> "How helpful One Stop Career Centers"
+"Used The Client Assistance Program" -> "Other employment assist program helpful"
+"Used Vocational Rehabilitation Agencies" -> "How helpful was Vocational Rehab Agency"
+"Used any other employment assistance program" -> "Other employment assist program helpful"
+"Used the Ticket to Work Program" -> "The Ticket to Work Program helpfulness"
+county -> "Used Ctr for Indept Living for Ind w Dis"
+county -> "Used Vocational Rehabilitation Agencies"
+}
