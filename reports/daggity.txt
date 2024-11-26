@@ -13,6 +13,7 @@ dag {
 "Demographics race of respondent" [exposure,pos="-1.389,-1.248"]
 "Demographics sex" [exposure,pos="-1.104,-1.488"]
 "Does this person have any of these disability conditions" [exposure,pos="-1.176,-2.012"]
+"How Disability Affects Ability to Work" [pos="-0.889,0.469"]
 "How helpful One Stop Career Centers" [pos="-0.514,-0.400"]
 "How helpful was Vocational Rehab Agency" [pos="-1.285,-0.117"]
 "Indicates household-total family income in past 12 months" [exposure,pos="-0.219,-2.027"]
@@ -50,6 +51,7 @@ county [exposure,pos="-0.437,-1.733"]
 "Does this person have any of these disability conditions" -> "Demographics sex"
 "Does this person have any of these disability conditions" -> "Indicates household-total family income in past 12 months"
 "Does this person have any of these disability conditions" -> county
+"How Disability Affects Ability to Work" -> "Labor Force-employment status"
 "How helpful One Stop Career Centers" -> "Labor Force-employment status"
 "How helpful was Vocational Rehab Agency" -> "Labor Force-employment status"
 "Indicates household-total family income in past 12 months" -> "Used Assistive Technology Act Prog"
